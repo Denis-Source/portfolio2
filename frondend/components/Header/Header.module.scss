@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding: 10px 0;
+  transition: background-color 300ms, padding 300ms;
+}
+
+.headerSunk {
+  @extend .header;
+  padding: 5px 0;
+  background-color: $color-header;
+}
+
+
+.layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 32px;
+  font-family: $font-section-title;
+  color: $color-white;
+}
+
+.navigation {
+  display: flex;
+}
+
+.name {
+  padding: 10px;
+  font-size: 16px;
+  font-family: $font-section-title;
+  text-transform: uppercase;
+  color: $text-color-white;
+  transition: color 300ms;
+
+  &:hover {
+    color: $color-primary;
+  }
+}

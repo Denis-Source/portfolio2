@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Raleway-Regular;
+  src: url("../public/fonts/Raleway-Regular.ttf");
+}
+
+$font-text-regular: "Raleway-Regular";
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url("../public/fonts/Raleway-Bold.ttf");
+}
+$font-text-bold: "Raleway-Bold";
+
+@font-face {
+  font-family: Raleway-Italic;
+  src: url("../public/fonts/Raleway-Italic.ttf");
+}
+
+$font-text-italic: "Raleway-Italic";
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../public/fonts/Poppins-Medium.otf");
+}
+$font-section-title: "Poppins-Medium";
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../public/fonts/Poppins-Bold.otf");
+}
+$font-section-subtitle: "Poppins-Bold";
+
+
+$text-color-white: #fff;
+$text-color-primary: #263d4d;
+$text-color-secondary: #5c8eb0;
+
+$color-primary: #ff4a17;
+$color-secondary: #b5ccdb;
+$color-secondary-hal: #b5ccdb77;
+
+$color-white: #fff;
+
+$color-hero-overlay: rgba(10, 16, 21, 0.57);
+$color-shadow: rgb(214 215 216 / 60%);
+
+$color-correct: #18d26e;
+$color-error: #d14b30;
+
+$color-correct-hal: #5ba25155;
+$color-error-hal: #d14b3055;
+
+$little: 480px;
+$small: 600px;
+$medium: 768px;
+$large: 1200px;
+
+$color-header: rgba(21, 34, 43, 0.85);
+$color-footer: #141d23;

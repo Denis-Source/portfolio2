@@ -1,0 +1,8 @@
+.nav {
+  display: flex;
+  gap: 30px;
+
+  @media screen and (max-width: $medium) {
+    gap: 15px;
+  }
+}

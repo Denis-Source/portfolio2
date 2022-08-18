@@ -1,0 +1,105 @@
+.form {
+  padding: 30px;
+  width: 100%;
+
+  box-shadow: 0 0 30px $color-shadow;
+  align-self: baseline;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  transition: background-color 300ms;
+}
+
+.formNotValidated {
+  @extend .form;
+  animation: 300ms shake;
+}
+
+.formSent {
+  @extend .form;
+  background-color: $color-correct-hal;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(5%);
+  }
+  30% {
+    transform: translateX(-2%);
+  }
+  60% {
+    transform: translateX(1%);
+  }
+}
+
+.subject {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.message {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.submitWrapper {
+  display: flex;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 20px;
+}
+
+.submit {
+  background: $color-primary;
+  border: 2px $color-primary solid;
+  border-radius: 4px;
+  font-family: $font-text-bold;
+  text-transform: uppercase;
+  color: $text-color-white;
+  font-size: 14px;
+  padding: 12px 35px;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 300ms, border 300ms, background-color 300ms, color 300ms;
+
+  @media screen and (max-width: $medium) {
+    margin: 20px 0;
+  }
+  &:hover {
+    border: $color-secondary 2px solid;
+    background-color: $color-secondary-hal;
+    color: $text-color-primary
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+
+.status {
+  background-color: $color-correct;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 0;
+  color: $color-white;
+  font-family: $font-section-title;
+  max-height: inherit;
+  transition: max-height 300ms, opacity 300ms, padding 300ms;
+  opacity: 1;
+}
+
+
+.statusHidden {
+  @extend .status;
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+}
+

@@ -1,0 +1,39 @@
+.wrapper {
+  padding: 60px 0;
+}
+
+.link {
+  display: block;
+  position: relative;
+  top: -118px;
+  visibility: hidden;
+}
+
+
+.title {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: $text-color-secondary;
+  font-family: $font-section-title;
+  letter-spacing: 0.15em;
+
+  &:after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: $color-primary;
+    margin: 4px 10px;
+  }
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: $text-color-primary;
+  font-family: $font-section-subtitle;
+}
+
+
+
+

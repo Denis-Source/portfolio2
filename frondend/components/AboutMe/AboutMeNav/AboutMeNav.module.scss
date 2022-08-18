@@ -1,0 +1,71 @@
+.layout {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  transition: color 300ms, background-color 300ms, border-color 300ms, transform 300ms;
+  border: 0;
+  font-family: $font-text-regular;
+  font-size: 16px;
+  border-radius: 10px;
+
+  @media screen and (max-width: $medium) {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: $large) {
+    justify-content: center;
+  }
+}
+
+.layoutActive {
+  @extend .layout;
+  background-color: $color-primary;
+  color: $text-color-white;
+}
+
+.layoutInactive {
+  @extend .layout;
+  background-color: $color-white;
+  color: $text-color-primary;
+  border: $color-secondary 1px solid;
+
+  &:hover {
+    color: $color-primary;
+    cursor: pointer;
+    border-color: $color-secondary-hal;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.image {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  transition: 300ms;
+  @media screen and (max-width: $small) {
+    width: 7vw;
+    height: 7vw;
+  }
+}
+
+.imageActive {
+  @extend .image;
+  filter: brightness(0) invert(1);
+}
+
+.imageInactive {
+  @extend .image;
+}
+
+.title {
+  @media screen and (max-width: $large) {
+    display: none;
+  }
+}
