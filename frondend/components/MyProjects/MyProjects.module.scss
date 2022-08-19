@@ -1,25 +1,23 @@
 .categories {
+  gap: 5px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .projects {
-  margin: 60px 0;
+  margin: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 1rem;
-  grid-row-gap: 2rem;
+  gap: 30px;
 
   @media screen and (max-width: $large) {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
   @media screen and (max-width: $medium) {
     grid-template-columns: 1fr 1fr;
-  }
-  @media screen and (max-width: $little) {
-    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }

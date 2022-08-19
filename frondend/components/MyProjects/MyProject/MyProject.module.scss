@@ -1,13 +1,16 @@
 .layout {
   aspect-ratio: 1 / 1;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &:hover {
     .image {
       max-height: 80%;
     }
     .info {
       bottom: 100px;
-      max-height: 100px;
+      max-height: fit-content;
       opacity: 1;
     }
     .icon {
@@ -40,11 +43,9 @@
   color: $text-color-white;
   background-color: $color-primary;
   position: relative;
-  height: 100px;
   width: 100%;
   transition: 400ms;
   bottom: 0;
-  max-height: 0;
   opacity: 0;
   padding: 15px;
   pointer-events: none;
@@ -52,17 +53,26 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  border-radius: 5px;
+  @media screen and (max-width: $small) {
+    gap: 5px;
+  }
 }
 
 .name {
   font-size: 20px;
-  //margin-bottom: 5px;
+  @media screen and (max-width: $small) {
+    font-size: 16px;
+  }
 }
 
 .description {
   font-size: 16px;
   font-family: $font-text-regular;
   text-align: justify;
+  @media screen and (max-width: $small) {
+    font-size: 13px;
+  }
 }
 
 .icons {
@@ -78,8 +88,11 @@
 .icon {
   position: relative;
   width: 30px;
-  height: 30px;
+  aspect-ratio: 1 / 1;
   opacity: 0;
   transition: opacity 150ms;
   filter: brightness(0) invert(1);
+  @media screen and (max-width: $small) {
+    width: 20px;
+  }
 }

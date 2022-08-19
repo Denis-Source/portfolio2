@@ -1,13 +1,16 @@
 .button {
+  margin: 5px;
   border: 0;
   border-radius: 5px;
   font-family: $font-section-title;
   background-color: $color-primary;
   padding: 5px 16px;
-  font-size: 14px;
+  font-size: 16px;
   color: $text-color-white;
   transition: background-color 300ms;
 }
+
+
 
 .buttonInactive {
   @extend .button;
