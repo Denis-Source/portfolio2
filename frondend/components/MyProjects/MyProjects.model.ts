@@ -15,7 +15,8 @@ export interface ProjectModel {
     name: string;
     link?: string;
     github?: string;
-    image: string;
+    image_white: string;
+    image_black: string;
     description: string;
     categories: CategoryModel[]
 }

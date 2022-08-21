@@ -7,8 +7,11 @@ import Link from "next/link";
 
 import github from "/public/images/github.png"
 import link from "/public/images/link.png"
+import {useTheme} from "next-themes";
 
 const MyProject = ({project}: { project: ProjectModel }) => {
+    const {theme} = useTheme()
+
     return (
         <motion.div
             layout
@@ -19,7 +22,8 @@ const MyProject = ({project}: { project: ProjectModel }) => {
             className={styles.layout}>
             <div className={styles.imageWrapper}>
                 <div className={styles.image}>
-                    <Image src={project.image} objectFit="cover" layout="fill" alt={project.name} objectPosition="50%"/>
+                    <Image src={theme === "light" ? project.image_white : project.image_black} objectFit="cover"
+                           layout="fill" alt={project.name} objectPosition="50%" quality={90}/>
                 </div>
             </div>
             <div className={styles.infoWrapper}>
