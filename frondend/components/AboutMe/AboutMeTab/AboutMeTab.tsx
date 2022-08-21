@@ -13,7 +13,7 @@ const AboutMeTab = ({tab}: { tab: AboutMeTab }) => {
             <div className={styles.body} dangerouslySetInnerHTML={{__html: tab.body}}/>
             <div className={styles.image}>
                 <Image src={getUrl(theme === "light" ? tab.image_white : tab.image_black)} layout="fill"
-                       objectFit="cover" alt={tab.name} priority={true}/>
+                       objectFit="cover" alt={tab.name} quality={90}/>
             </div>
         </div>
     );
