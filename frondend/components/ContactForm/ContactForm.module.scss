@@ -16,6 +16,11 @@
     border: 1px solid $color-secondary-hal-dark;
     margin: -1px;
   }
+
+  @media screen and (max-width: $little) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .formNotValidated {

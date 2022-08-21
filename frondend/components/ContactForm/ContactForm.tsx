@@ -68,7 +68,7 @@ const ContactForm = () => {
             />
             <p className={styleStatus}>Your message has been sent!</p>
             <div className={styles.submitWrapper}>
-                <input className={styles.submit} type="submit" onClick={handleSubmit}/>
+                <input className={styles.submit} type="submit" value="Submit" onClick={handleSubmit}/>
             </div>
         </form>
     );
