@@ -9,6 +9,7 @@ $font-text-regular: "Raleway-Regular";
   font-family: Raleway-Bold;
   src: url("../public/fonts/Raleway-Bold.ttf");
 }
+
 $font-text-bold: "Raleway-Bold";
 
 @font-face {
@@ -22,27 +23,30 @@ $font-text-italic: "Raleway-Italic";
   font-family: Poppins-Medium;
   src: url("../public/fonts/Poppins-Medium.otf");
 }
+
 $font-section-title: "Poppins-Medium";
 
 @font-face {
   font-family: Poppins-Bold;
   src: url("../public/fonts/Poppins-Bold.otf");
 }
+
 $font-section-subtitle: "Poppins-Bold";
 
+$little: 480px;
+$small: 600px;
+$medium: 768px;
+$large: 1200px;
 
-$text-color-white: #fff;
 $text-color-primary: #263d4d;
 $text-color-secondary: #5c8eb0;
+$text-color-accent: #fff;
+$default-text-color: #444444;
 
-$color-primary: #ff4a17;
+$color-primary: #fff;
+$color-accent: #ff4a17;
 $color-secondary: #b5ccdb;
 $color-secondary-hal: #b5ccdb77;
-
-$color-white: #fff;
-
-$color-hero-overlay: rgba(10, 16, 21, 0.57);
-$color-shadow: rgb(214 215 216 / 60%);
 
 $color-correct: #18d26e;
 $color-error: #d14b30;
@@ -50,10 +54,32 @@ $color-error: #d14b30;
 $color-correct-hal: #5ba25155;
 $color-error-hal: #d14b3055;
 
-$little: 480px;
-$small: 600px;
-$medium: 768px;
-$large: 1200px;
+$color-hero-overlay: rgba(10, 16, 21, 0.57);
+$color-shadow: rgb(214 215 216 / 60%);
 
 $color-header: rgba(21, 34, 43, 0.85);
 $color-footer: #141d23;
+
+
+$text-color-primary-dark: #D6D5A8;
+$text-color-secondary-dark: #816797;
+$text-color-accent-dark: #121921;
+
+$default-text-color-dark: #D6D5A8;
+
+$color-primary-dark: #121921;
+$color-accent-dark: #D6D5A8;
+$color-secondary-dark: #51557E;
+$color-secondary-hal-dark: #51557E77;
+
+$color-correct-dark: #18d26e;
+$color-error-dark: #d14b30;
+
+$color-correct-hal-dark: #5ba25155;
+$color-error-hal-dark: #d14b3055;
+
+$color-hero-overlay-dark: rgba(10, 16, 21, 0.57);
+$color-shadow-dark: #51557E22;
+
+$color-header-dark: rgba(214, 213, 168, 0.85);
+$color-footer-dark: #d6d5a8;

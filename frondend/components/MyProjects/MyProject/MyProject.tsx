@@ -3,9 +3,10 @@ import {ProjectModel} from "../MyProjects.model";
 import styles from "./MyProject.module.scss"
 import Image from "next/image";
 import {motion} from "framer-motion"
+import Link from "next/link";
+
 import github from "/public/images/github.png"
 import link from "/public/images/link.png"
-import Link from "next/link";
 
 const MyProject = ({project}: { project: ProjectModel }) => {
     return (

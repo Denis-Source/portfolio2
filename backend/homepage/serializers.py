@@ -11,7 +11,7 @@ class HeroSerializer(ModelSerializer):
 class AboutTabSerializer(ModelSerializer):
     class Meta:
         model = AboutTab
-        fields = ["name", "icon", "image", "body"]
+        fields = ["name", "icon_white", "icon_black", "image_white", "image_black", "body"]
 
 
 class AboutSerializer(ModelSerializer):
@@ -25,7 +25,7 @@ class AboutSerializer(ModelSerializer):
 class ContactCardSerializer(ModelSerializer):
     class Meta:
         model = ContactCard
-        fields = ["title", "link", "icon", "body"]
+        fields = ["title", "link", "icon_black", "icon_white", "body"]
 
 
 class ContactSerializer(ModelSerializer):

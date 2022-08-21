@@ -1,9 +1,14 @@
 .footer {
   margin-top: 60px;
   background-color: $color-footer;
-  color: $text-color-white;
-  padding: 30px;
+  color: $text-color-accent;
+  padding: 20px;
   display: flex;
   justify-content: center;
-  font-size: 14px;
+  font-size: 16px;
+
+  [data-theme='dark'] & {
+    background-color: $color-footer-dark;
+    color: $text-color-accent-dark;
+  }
 }

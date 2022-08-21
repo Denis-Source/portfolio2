@@ -3,9 +3,12 @@ import {SectionTitleModel} from "../SectionTitle/SectionTitle.model";
 import Link from "next/link";
 import styles from "./Header.module.scss"
 import {HeaderModel} from "./Header.model";
+import Switch from "../Switch/Switch";
+import {useTheme} from "next-themes";
 
 const Header = ({header, sections}: { header: HeaderModel, sections: SectionTitleModel [] }) => {
     const BREAK_POINT = 300;
+
 
     const [headerStyle, setHeaderStyle] = useState(styles.header);
     const handleScroll = () => {
@@ -14,12 +17,14 @@ const Header = ({header, sections}: { header: HeaderModel, sections: SectionTitl
     };
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('scroll', handleScroll, {passive: true});
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const {theme, setTheme} = useTheme();
 
     return (
         <header className={headerStyle}>
@@ -36,6 +41,10 @@ const Header = ({header, sections}: { header: HeaderModel, sections: SectionTitl
                                 </a>
                             </Link>
                         )}
+                        <Switch callback={() => setTheme(
+                            "dark"===theme?
+                                "light":"dark"
+                        )}/>
                     </div>
                 </div>
             </div>

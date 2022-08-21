@@ -4,15 +4,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   &:hover {
     .image {
       max-height: 80%;
     }
+
     .info {
       bottom: 100px;
       max-height: fit-content;
       opacity: 1;
     }
+
     .icon {
       opacity: 1;
     }
@@ -40,8 +43,8 @@
 
 .info {
   z-index: 2;
-  color: $text-color-white;
-  background-color: $color-primary;
+  color: $text-color-accent;
+  background-color: $color-accent;
   position: relative;
   width: 100%;
   transition: 400ms;
@@ -57,6 +60,11 @@
   @media screen and (max-width: $small) {
     gap: 5px;
   }
+
+  [data-theme='dark'] & {
+    color: $text-color-accent-dark;
+    background-color: $color-accent-dark;
+  }
 }
 
 .name {
@@ -69,7 +77,6 @@
 .description {
   font-size: 16px;
   font-family: $font-text-regular;
-  text-align: justify;
   @media screen and (max-width: $small) {
     font-size: 13px;
   }
@@ -92,7 +99,11 @@
   opacity: 0;
   transition: opacity 150ms;
   filter: brightness(0) invert(1);
-  @media screen and (max-width: $small) {
-    width: 20px;
+
+  [data-theme='dark'] & {
+    filter: none;
   }
-}
+    @media screen and (max-width: $small) {
+      width: 20px;
+    }
+  }

@@ -10,6 +10,12 @@
   gap: 15px;
 
   transition: background-color 300ms;
+
+  [data-theme='dark'] & {
+    box-shadow: none;
+    border: 1px solid $color-secondary-hal-dark;
+    margin: -1px;
+  }
 }
 
 .formNotValidated {
@@ -53,25 +59,38 @@
 }
 
 .submit {
-  background: $color-primary;
-  border: 2px $color-primary solid;
+  background: $color-accent;
+  border: 2px $color-accent solid;
   border-radius: 4px;
   font-family: $font-text-bold;
   text-transform: uppercase;
-  color: $text-color-white;
+  color: $text-color-accent;
   font-size: 14px;
   padding: 12px 35px;
   width: 200px;
   cursor: pointer;
   transition: transform 300ms, border 300ms, background-color 300ms, color 300ms;
 
+  [data-theme='dark'] & {
+    background: $text-color-primary-dark;
+    border: 2px $text-color-primary-dark solid;
+    color: $text-color-accent-dark;
+  }
+
   @media screen and (max-width: $medium) {
     margin: 20px 0;
   }
+
   &:hover {
     border: $color-secondary 2px solid;
     background-color: $color-secondary-hal;
-    color: $text-color-primary
+    color: $text-color-primary;
+
+    [data-theme='dark'] & {
+      border: $color-secondary-dark 2px solid;
+      background-color: $color-secondary-hal-dark;
+      color: $text-color-primary-dark;
+    }
   }
 
   &:active {
@@ -88,7 +107,7 @@
   justify-content: center;
   width: 100%;
   padding: 16px 0;
-  color: $color-white;
+  color: $color-primary;
   font-family: $font-section-title;
   max-height: inherit;
   transition: max-height 300ms, opacity 300ms, padding 300ms;

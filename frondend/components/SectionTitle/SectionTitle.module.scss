@@ -17,6 +17,10 @@
   font-family: $font-section-title;
   letter-spacing: 0.15em;
 
+  [data-theme='dark'] & {
+    color: $text-color-secondary-dark;
+  }
+
   &:after {
     content: "";
     width: 120px;
@@ -24,6 +28,10 @@
     display: inline-block;
     background: $color-primary;
     margin: 4px 10px;
+
+    [data-theme='dark'] & {
+      background: $text-color-secondary-dark;
+    }
   }
 }
 
@@ -32,6 +40,10 @@
   font-size: 36px;
   color: $text-color-primary;
   font-family: $font-section-subtitle;
+
+  [data-theme='dark'] & {
+    color: $text-color-primary-dark;
+  }
 }
 
 

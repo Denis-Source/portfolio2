@@ -5,8 +5,10 @@
   padding: 10px 0;
   transition: background-color 300ms, padding 300ms;
 
-  @media screen and (max-width: $medium) {
-    display: none;
+  color: $text-color-accent;
+
+  [data-theme='dark'] & {
+    color: $color-header-dark;
   }
 }
 
@@ -14,6 +16,11 @@
   @extend .header;
   padding: 5px 0;
   background-color: $color-header;
+
+  [data-theme='dark'] & {
+    color: $color-primary-dark;
+    background-color: $color-header-dark;
+  }
 }
 
 
@@ -26,7 +33,6 @@
 .logo {
   font-size: 32px;
   font-family: $font-section-title;
-  color: $color-white;
 }
 
 .navigation {
@@ -38,10 +44,18 @@
   font-size: 14px;
   font-family: $font-section-title;
   text-transform: uppercase;
-  color: $text-color-white;
   transition: color 300ms;
 
-  &:hover {
-    color: $color-primary;
+  @media screen and (max-width: $medium) {
+    display: none;
   }
+
+  &:hover {
+    color: $color-accent;
+
+    [data-theme='dark'] & {
+      color: $text-color-accent-dark;
+    }
+  }
+
 }

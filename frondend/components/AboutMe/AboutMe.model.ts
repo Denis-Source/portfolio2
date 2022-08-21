@@ -7,7 +7,9 @@ export interface AboutMeModel{
 
 export interface AboutMeTab {
     name: string;
-    icon: string;
-    image: string;
+    icon_black: string;
+    icon_white: string;
+    image_black: string;
+    image_white: string;
     body: string;
 }

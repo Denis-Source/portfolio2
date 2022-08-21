@@ -16,8 +16,10 @@ class Hero(SingletonModel):
 
 class AboutTab(models.Model):
     name = models.CharField(max_length=120)
-    icon = models.ImageField(upload_to="about-icons")
-    image = models.ImageField(upload_to="about-images")
+    icon_black = models.ImageField(upload_to="about-icons")
+    icon_white = models.ImageField(upload_to="about-icons")
+    image_black = models.ImageField(upload_to="about-images")
+    image_white = models.ImageField(upload_to="about-images")
     body = HTMLField()
 
     def __str__(self):
@@ -37,8 +39,12 @@ class About(SingletonModel):
 class ContactCard(models.Model):
     title = models.CharField(max_length=120)
     link = models.CharField(max_length=240)
-    icon = models.ImageField(upload_to="contact-icons")
+    icon_white = models.ImageField(upload_to="contact-icons")
+    icon_black = models.ImageField(upload_to="contact-icons")
     body = models.CharField(max_length=120)
+
+    def __str__(self):
+        return self.title
 
 
 class Contact(SingletonModel):

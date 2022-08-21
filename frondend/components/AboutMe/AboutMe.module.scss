@@ -1,6 +1,13 @@
 .nav {
   display: flex;
   gap: 30px;
+  overflow-x: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   @media screen and (max-width: $medium) {
     gap: 15px;

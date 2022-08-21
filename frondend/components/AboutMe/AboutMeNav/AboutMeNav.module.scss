@@ -23,24 +23,40 @@
 
 .layoutActive {
   @extend .layout;
-  background-color: $color-primary;
-  color: $text-color-white;
+  background-color: $color-accent;
+  color: $text-color-accent;
+
+  [data-theme='dark'] & {
+    background-color: $color-accent-dark;
+    color: $color-secondary-dark;
+  }
 }
 
 .layoutInactive {
   @extend .layout;
-  background-color: $color-white;
+  background-color: $color-primary;
   color: $text-color-primary;
   border: $color-secondary 1px solid;
 
+  [data-theme='dark'] & {
+    background-color: $color-primary-dark;
+    color: $color-secondary-dark;
+    border: $color-secondary-hal-dark 1px solid;
+  }
+
   &:hover {
-    color: $color-primary;
+    color: $color-accent;
     cursor: pointer;
     border-color: $color-secondary-hal;
+
+    [data-theme='dark'] & {
+      color: $color-accent-dark;
+      border-color: $color-accent-dark;
+    }
   }
 
   &:active {
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
 }
 
@@ -49,6 +65,7 @@
   width: 40px;
   height: 40px;
   transition: 300ms;
+  //noinspection ALL
   @media screen and (max-width: $small) {
     width: 7vw;
     height: 7vw;
@@ -58,6 +75,11 @@
 .imageActive {
   @extend .image;
   filter: brightness(0) invert(1);
+
+  [data-theme='dark'] & {
+    filter: none;
+  }
+
 }
 
 .imageInactive {

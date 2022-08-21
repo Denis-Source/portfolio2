@@ -16,28 +16,62 @@
   resize: none;
   background-color: transparent;
 
+
+  [data-theme='dark'] & {
+    border: $color-secondary-dark 1px solid;
+    color: $text-color-primary-dark;
+
+    &::placeholder {
+      color: $color-secondary-dark;
+    }
+  }
+
   &:focus {
-    border: $color-primary 1px solid;
+    border: $color-accent 1px solid;
     outline: none;
+
+    [data-theme='dark'] & {
+      border: $color-accent-dark 1px solid;
+    }
   }
 }
 
+
 .inputValidated {
+  @extend .input;
+
   border: $color-correct 1px solid;
 
-  @extend .input;
+  [data-theme='dark'] & {
+    border: $color-correct-dark 1px solid;
+  }
+
   &:focus {
     border: $color-correct 1px solid;
     outline: none;
+
+    [data-theme='dark'] & {
+      border: $color-correct-dark 1px solid;
+    }
   }
 }
 
 .inputNotValidated {
-  border: $color-primary 1px solid;
+  border: $color-accent 1px solid;
+
+  [data-theme='dark'] & {
+    border: $color-error-dark 1px solid;
+  }
 
   @extend .input;
+
   &:focus {
-    border: $color-primary 1px solid;
+    border: $color-accent 1px solid;
     outline: none;
+
+    [data-theme='dark'] & {
+      border: $color-error-dark 1px solid;
+    }
   }
 }
+

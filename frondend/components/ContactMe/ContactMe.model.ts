@@ -8,6 +8,7 @@ export interface ContactMeModel {
 export interface ContactMeCard {
     title: string;
     link: string;
-    icon: string;
+    icon_white: string;
+    icon_black: string;
     body: string;
 }

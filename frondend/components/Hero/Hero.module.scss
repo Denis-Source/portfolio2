@@ -18,16 +18,24 @@
   justify-content: center;
   height: 100%;
   background-color: $color-hero-overlay;
+
+  [data-theme='dark'] & {
+    background-color: $color-hero-overlay-dark;
+  }
 }
 
 .title {
-  color: $text-color-white;
+  color: $text-color-accent;
   font-family: $font-text-bold;
   font-size: 48px;
   line-height: 72px;
   font-weight: 800;
   text-transform: uppercase;
   margin: 0;
+
+  [data-theme='dark'] & {
+    color: $color-accent-dark;
+  }
 
   @media screen and (max-width: $medium) {
     font-size: 28px;
@@ -36,10 +44,14 @@
 }
 
 .subtitle {
-  color: $text-color-white;
+  color: $text-color-accent;
   font-size: 24px;
   font-weight: 500;
   margin: 10px 0;
+
+  [data-theme='dark'] & {
+    color: $color-accent-dark;
+  }
 
   @media screen and (max-width: $medium) {
     font-size: 18px;
@@ -48,14 +60,14 @@
 }
 
 .button {
-  background: $color-primary;
-  border: 2px $color-primary solid;
+  background: $color-accent;
+  border: 2px $color-accent solid;
   border-radius: 4px;
 
   font-family: $font-text-regular;
   font-weight: 600;
 
-  color: $text-color-white;
+  color: $text-color-accent;
   text-transform: uppercase;
   font-size: 14px;
 
@@ -64,10 +76,21 @@
   padding: 12px 35px;
   margin: 50px 0;
 
+  [data-theme='dark'] & {
+    background: $text-color-primary-dark;
+    border: 2px $text-color-primary-dark solid;
+    color: $color-primary-dark;
+  }
+
   &:hover {
-    border-color: $color-white;
+    border-color: $color-primary;
     background-color: #ffffff33;
     cursor: pointer;
+
+    [data-theme='dark'] & {
+      border-color: $color-primary-dark;
+      background-color: #ffffff33;
+    }
   }
 
   @media screen and (max-width: $medium) {

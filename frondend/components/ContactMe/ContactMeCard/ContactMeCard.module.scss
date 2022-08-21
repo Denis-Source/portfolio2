@@ -8,7 +8,13 @@
   box-shadow: 0 0 30px $color-shadow;
   transition: transform 300ms;
 
-  &:hover {
+  [data-theme='dark'] & {
+    box-shadow: none;
+    margin: -1px;
+    border: 1px solid $color-secondary-hal-dark;
+  }
+
+    &:hover {
     transform: scale(1.05);
   }
   &:active {

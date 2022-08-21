@@ -1,7 +1,7 @@
 .layout {
   margin: 60px 0;
   display: grid;
-  grid-template-columns: 40% 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
   animation: fadeIn 300ms ease-out;
   justify-content: space-between;
@@ -13,7 +13,7 @@
 }
 
 @keyframes fadeIn {
-  0%{
+  0% {
     opacity: 0;
   }
 }
@@ -36,11 +36,10 @@
     width: 100%;
   }
 
-    & h3 {
+  & h3 {
     font-size: 26px;
     margin-top: 30px;
     margin-bottom: 20px;
-    font-family: $text-color-primary;
   }
 
   & i {
@@ -54,29 +53,44 @@
     text-align: justify;
 
     & a {
-      color: $color-primary;
+      color: $color-accent;
       text-decoration: solid underline transparent;
       transition: text-decoration-color 300ms;
+
+      [data-theme='dark'] & {
+        color: $color-accent-dark;
+      }
+
       &:hover {
-        text-decoration-color: $color-primary
+        text-decoration-color: $color-accent;
+
+        [data-theme='dark'] & {
+          text-decoration-color: $color-accent-dark;
+        }
       }
     }
   }
 
-
   & ul {
     padding-left: 20px;
-
 
     & li {
       margin: 8px 0;
       text-align: justify;
+
       & a {
-        color: $color-primary;
+        color: $color-accent;
         text-decoration: solid underline transparent;
         transition: text-decoration-color 300ms;
+        [data-theme='dark'] & {
+          color: $color-accent-dark;
+        }
+
         &:hover {
-          text-decoration-color: $color-primary
+          text-decoration-color: $color-accent;
+          [data-theme='dark'] & {
+            text-decoration-color: $color-accent-dark;
+          }
         }
       }
     }
