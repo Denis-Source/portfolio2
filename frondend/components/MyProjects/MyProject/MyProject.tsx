@@ -23,7 +23,7 @@ const MyProject = ({project}: { project: ProjectModel }) => {
             <div className={styles.imageWrapper}>
                 <div className={styles.image}>
                     <Image src={theme === "light" ? project.image_white : project.image_black} objectFit="cover"
-                           layout="fill" alt={project.name} objectPosition="50%" quality={90}/>
+                           layout="fill" alt={project.name} objectPosition="50%" quality={90} priority={true}/>
                 </div>
             </div>
             <div className={styles.infoWrapper}>
