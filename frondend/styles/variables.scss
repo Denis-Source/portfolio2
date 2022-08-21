@@ -1,36 +1,36 @@
 @font-face {
   font-family: Raleway-Regular;
+  font-display: swap;
   src: url("../public/fonts/Raleway-Regular.woff2");
 }
-
 $font-text-regular: "Raleway-Regular";
 
 @font-face {
   font-family: Raleway-Bold;
+  font-display: swap;
   src: url("../public/fonts/Raleway-Bold.woff2");
 }
-
 $font-text-bold: "Raleway-Bold";
 
 @font-face {
   font-family: Raleway-Italic;
+  font-display: swap;
   src: url("../public/fonts/Raleway-Italic.woff2");
 }
-
 $font-text-italic: "Raleway-Italic";
 
 @font-face {
   font-family: Poppins-Medium;
+  font-display: swap;
   src: url("../public/fonts/Poppins-Medium.woff2");
 }
-
 $font-section-title: "Poppins-Medium";
 
 @font-face {
   font-family: Poppins-Bold;
+  font-display: swap;
   src: url("../public/fonts/Poppins-Bold.woff2");
 }
-
 $font-section-subtitle: "Poppins-Bold";
 
 $little: 480px;
