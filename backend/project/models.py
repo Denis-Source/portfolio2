@@ -14,7 +14,8 @@ class Project(models.Model):
     priority = models.IntegerField(default=100)
     description = models.CharField(max_length=120)
     categories = models.ManyToManyField(Category)
-    image = models.ImageField(upload_to="projects")
+    image_black = models.ImageField(upload_to="projects")
+    image_white = models.ImageField(upload_to="projects")
     link = models.CharField(max_length=240, blank=True, null=True)
     github = models.CharField(max_length=240, blank=True, null=True)
 
