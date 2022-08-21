@@ -41,6 +41,10 @@
     font-size: 28px;
     line-height: 36px;
   }
+  @media screen and (max-width: $tiny) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .subtitle {
@@ -56,6 +60,10 @@
   @media screen and (max-width: $medium) {
     font-size: 18px;
     line-height: 30px;
+  }
+  @media screen and (max-width: $tiny) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 

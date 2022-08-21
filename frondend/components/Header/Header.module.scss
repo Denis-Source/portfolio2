@@ -33,6 +33,10 @@
 .logo {
   font-size: 32px;
   font-family: $font-section-title;
+
+  @media screen and (max-width: $tiny) {
+    font-size: 24px;
+  }
 }
 
 .navigation {
