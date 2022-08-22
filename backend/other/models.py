@@ -15,3 +15,12 @@ class Header(SingletonModel):
 
     def __str__(self):
         return self.info
+
+
+class SEO(SingletonModel):
+    title = models.CharField(max_length=120)
+    description = models.TextField()
+    share_image = models.ImageField(upload_to="seo_share")
+
+    def __str__(self):
+        return self.title

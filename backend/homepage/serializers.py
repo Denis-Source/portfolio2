@@ -1,4 +1,4 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework.serializers import ModelSerializer, BaseSerializer
 from .models import Hero, AboutTab, About, ContactCard, Contact, Project
 
 

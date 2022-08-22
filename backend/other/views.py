@@ -1,6 +1,6 @@
 from homepage.views import SingletonRetrieveView
-from .models import Header, Footer
-from .serializers import HeaderSerializer, FooterSerializer
+from .models import Header, Footer, SEO
+from .serializers import HeaderSerializer, FooterSerializer, SEOSerializer
 
 
 class HeaderRetrieveView(SingletonRetrieveView):
@@ -11,3 +11,8 @@ class HeaderRetrieveView(SingletonRetrieveView):
 class FooterRetrieveView(SingletonRetrieveView):
     model = Footer
     serializer_class = FooterSerializer
+
+
+class SEORetrieveView(SingletonRetrieveView):
+    model = SEO
+    serializer_class = SEOSerializer
