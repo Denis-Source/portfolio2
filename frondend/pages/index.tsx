@@ -8,10 +8,11 @@ import HomePage from "../pagesContent/HomePage/HomePage";
 import {CategoryModel, MyProjectsModel, ProjectModel} from "../components/MyProjects/MyProjects.model";
 import MainLayout from "../layouts/MainLayout/MainLayout";
 import {HeaderModel} from "../components/Header/Header.model";
+import {HeadModel} from "../components/Head/Head.model";
 
-const Home: NextPage<HomepageProps> = ({header, footer, hero, aboutMe, myProjects, contactMe, categories, projects}: HomepageProps) => {
+const Home: NextPage<HomepageProps> = ({head, header, footer, hero, aboutMe, myProjects, contactMe, categories, projects}: HomepageProps) => {
     return (
-        <MainLayout header={header} sections={[hero, aboutMe, myProjects, contactMe]} footer={footer}>
+        <MainLayout head={head} header={header} sections={[hero, aboutMe, myProjects, contactMe]} footer={footer}>
             <HomePage
                 hero={hero}
                 aboutMe={aboutMe}
@@ -86,8 +87,15 @@ export const getStaticProps: GetStaticProps = async () => {
         },
     })
 
-
     const footer = await response.json();
+
+    response = await fetch(getUrl("/seo"), {
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+
+    const head:HeadModel = await response.json();
 
     return {
         props: {
@@ -99,6 +107,7 @@ export const getStaticProps: GetStaticProps = async () => {
             projects,
             header,
             footer,
+            head,
         },
         revalidate: 1,
     };
