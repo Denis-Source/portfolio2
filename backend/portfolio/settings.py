@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "message",
     "project",
     "other",
+    "telegram"
 ]
 
 MIDDLEWARE = [
@@ -111,3 +112,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
+
+BOT_TOKEN = ""
+BOT_REC_ID = 12456
