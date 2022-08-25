@@ -37,9 +37,6 @@ const ContactForm = () => {
                 },
                 body: JSON.stringify(data)
             })
-            inputs.map(input =>
-                input.value = ""
-            )
 
             setStyleStatus(styles.status)
             setTimeout(() => {

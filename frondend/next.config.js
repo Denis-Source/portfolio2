@@ -5,7 +5,7 @@ const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
     images: {
-        domains: ['localhost', '127.0.0.1'],
+        domains: ['localhost', '127.0.0.1', 'api.zoloto.cx.ua'],
     },
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
