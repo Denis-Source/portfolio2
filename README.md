@@ -95,10 +95,14 @@ npm run start
 ***
 
 ## Tests
+### web.dev
+![https://i.ibb.co/PDxpztj/image.png](https://i.ibb.co/PDxpztj/image.png)
+
 ### Desktop LightHouse test
 ![https://i.ibb.co/QCvC99g/image.png](https://i.ibb.co/QCvC99g/image.png)
+
 ### Mobile LightHouse test
 ![https://i.ibb.co/0V028xj/image.png](https://i.ibb.co/0V028xj/image.png)
+
 ### GMetrix
 ![https://i.ibb.co/XCz0tqF/image.png](https://i.ibb.co/XCz0tqF/image.png)
-
