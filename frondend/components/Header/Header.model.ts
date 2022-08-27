@@ -1,3 +1,3 @@
-export interface HeaderModel{
+export interface HeaderModel {
     info: string;
 }

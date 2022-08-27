@@ -1,51 +1,46 @@
 .wrapper {
-  padding: 60px 0;
+    padding: 60px 0;
 }
 
 .link {
-  display: block;
-  position: relative;
-  top: -118px;
-  visibility: hidden;
+    display: block;
+    position: relative;
+    top: -118px;
+    visibility: hidden;
 }
 
-
 .title {
-  text-transform: uppercase;
-  font-size: 14px;
-  color: $text-color-secondary;
-  font-family: $font-section-title;
-  letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $text-color-secondary;
+    font-family: $font-section-title;
+    letter-spacing: 0.15em;
 
-  [data-theme='dark'] & {
-    color: $text-color-secondary-dark;
-  }
-
-  &:after {
-    content: "";
-    width: 120px;
-    height: 1px;
-    display: inline-block;
-    background: $color-primary;
-    margin: 4px 10px;
-
-    [data-theme='dark'] & {
-      background: $text-color-secondary-dark;
+    [data-theme="dark"] & {
+        color: $text-color-secondary-dark;
     }
-  }
+
+    &:after {
+        content: "";
+        width: 120px;
+        height: 1px;
+        display: inline-block;
+        background: $color-primary;
+        margin: 4px 10px;
+
+        [data-theme="dark"] & {
+            background: $text-color-secondary-dark;
+        }
+    }
 }
 
 .subtitle {
-  text-transform: uppercase;
-  font-size: 36px;
-  color: $text-color-primary;
-  font-family: $font-section-subtitle;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: $text-color-primary;
+    font-family: $font-section-subtitle;
 
-  [data-theme='dark'] & {
-    color: $text-color-primary-dark;
-  }
+    [data-theme="dark"] & {
+        color: $text-color-primary-dark;
+    }
 }
-
-
-
-

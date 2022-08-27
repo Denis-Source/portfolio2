@@ -1,40 +1,38 @@
 .button {
-  margin: 5px;
-  border: 0;
-  border-radius: 5px;
-  font-family: $font-section-title;
-  background-color: $color-accent;
-  padding: 5px 16px;
-  font-size: 16px;
-  color: $text-color-accent;
-  transition: background-color 300ms;
+    margin: 5px;
+    border: 0;
+    border-radius: 5px;
+    font-family: $font-section-title;
+    background-color: $color-accent;
+    padding: 5px 16px;
+    font-size: 16px;
+    color: $text-color-accent;
+    transition: background-color 300ms;
 
-  [data-theme='dark'] & {
-    background-color: $color-accent-dark;
-    color: $text-color-accent-dark;
-  }
+    [data-theme="dark"] & {
+        background-color: $color-accent-dark;
+        color: $text-color-accent-dark;
+    }
 }
-
 
 .buttonInactive {
-  @extend .button;
-  background-color: $color-secondary-hal;
-  color: $text-color-primary;
+    @extend .button;
+    background-color: $color-secondary-hal;
+    color: $text-color-primary;
 
-  [data-theme='dark'] & {
-    background-color: $color-secondary-hal-dark;
-    color: $text-color-primary-dark;
-  }
-
-  &:hover {
-    background-color: $color-accent;
-    color: $text-color-accent;
-    cursor: pointer;
-
-    [data-theme='dark'] & {
-      background-color: $color-accent-dark;
-      color: $text-color-accent-dark;
+    [data-theme="dark"] & {
+        background-color: $color-secondary-hal-dark;
+        color: $text-color-primary-dark;
     }
-  }
-}
 
+    &:hover {
+        background-color: $color-accent;
+        color: $text-color-accent;
+        cursor: pointer;
+
+        [data-theme="dark"] & {
+            background-color: $color-accent-dark;
+            color: $text-color-accent-dark;
+        }
+    }
+}

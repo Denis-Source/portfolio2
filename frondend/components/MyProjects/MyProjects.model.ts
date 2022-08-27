@@ -2,7 +2,7 @@ export interface MyProjectsModel {
     name: string;
     title: string;
     subtitle: string;
-    projects: ProjectModel[]
+    projects: ProjectModel[];
 }
 
 export interface CategoryModel {
@@ -18,5 +18,5 @@ export interface ProjectModel {
     image_white: string;
     image_black: string;
     description: string;
-    categories: CategoryModel[]
+    categories: CategoryModel[];
 }

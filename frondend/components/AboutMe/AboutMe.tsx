@@ -1,25 +1,28 @@
-import {AboutMeModel} from "./AboutMe.model";
-import {SectionTitle} from "../SectionTitle/SectionTitle";
-import styles from "./AboutMe.module.scss"
+import { AboutMeModel } from "./AboutMe.model";
+import { SectionTitle } from "../SectionTitle/SectionTitle";
+import styles from "./AboutMe.module.scss";
 import AboutMeTab from "./AboutMeTab/AboutMeTab";
 import AboutMeNav from "./AboutMeNav/AboutMeNav";
-import {useState} from "react";
+import { useState } from "react";
 
-
-const AboutMe = ({aboutMe}: { aboutMe: AboutMeModel }) => {
-    let [selected, setSelected] = useState(aboutMe.tabs[0].name)
-    const tab = aboutMe.tabs.filter(tab => tab.name === selected)[0]
+const AboutMe = ({ aboutMe }: { aboutMe: AboutMeModel }) => {
+    let [selected, setSelected] = useState(aboutMe.tabs[0].name);
+    const tab = aboutMe.tabs.filter((tab) => tab.name === selected)[0];
     return (
         <section>
-            <SectionTitle section={aboutMe}/>
+            <SectionTitle section={aboutMe} />
             <div className={styles.nav}>
-                {aboutMe.tabs.map((tab, index) =>
-                    <AboutMeNav callBack={() => setSelected(selected = tab.name)} active={tab.name === selected}
-                                tab={tab} key={index}/>
-                )}
+                {aboutMe.tabs.map((tab, index) => (
+                    <AboutMeNav
+                        callBack={() => setSelected((selected = tab.name))}
+                        active={tab.name === selected}
+                        tab={tab}
+                        key={index}
+                    />
+                ))}
             </div>
             <div className={styles.tab}>
-                <AboutMeTab tab={tab} key={tab.name}/>
+                <AboutMeTab tab={tab} key={tab.name} />
             </div>
         </section>
     );

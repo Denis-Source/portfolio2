@@ -1,3 +1,3 @@
-export interface FooterModel{
+export interface FooterModel {
     info: string;
 }

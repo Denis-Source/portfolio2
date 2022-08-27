@@ -1,29 +1,29 @@
 .layout {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  padding: 50px 20px;
-  box-shadow: 0 0 30px $color-shadow;
-  transition: transform 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 20px;
+    box-shadow: 0 0 30px $color-shadow;
+    transition: transform 300ms;
 
-  [data-theme='dark'] & {
-    box-shadow: none;
-    margin: -1px;
-    border: 1px solid $color-secondary-hal-dark;
-  }
+    [data-theme="dark"] & {
+        box-shadow: none;
+        margin: -1px;
+        border: 1px solid $color-secondary-hal-dark;
+    }
 
     &:hover {
-    transform: scale(1.05);
-  }
-  &:active {
-    transform: scale(1);
-  }
+        transform: scale(1.05);
+    }
+    &:active {
+        transform: scale(1);
+    }
 }
 
 .image {
-  position: relative;
-  width: 30px;
-  height: 30px;
+    position: relative;
+    width: 30px;
+    height: 30px;
 }

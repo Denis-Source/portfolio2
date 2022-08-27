@@ -1,4 +1,4 @@
-export interface AboutMeModel{
+export interface AboutMeModel {
     name: string;
     title: string;
     subtitle: string;

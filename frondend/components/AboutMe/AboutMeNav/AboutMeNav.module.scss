@@ -1,93 +1,93 @@
 .layout {
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 20px;
-  transition: color 300ms, background-color 300ms, border-color 300ms, transform 300ms;
-  border: 0;
-  font-family: $font-text-regular;
-  font-size: 16px;
-  border-radius: 10px;
-
-  @media screen and (max-width: $medium) {
-    padding: 20px;
-    gap: 10px;
-  }
-
-  @media screen and (max-width: $large) {
+    padding: 30px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-  }
+    width: 100%;
+    gap: 20px;
+    transition: color 300ms, background-color 300ms, border-color 300ms,
+        transform 300ms;
+    border: 0;
+    font-family: $font-text-regular;
+    font-size: 16px;
+    border-radius: 10px;
+
+    @media screen and (max-width: $medium) {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    @media screen and (max-width: $large) {
+        justify-content: center;
+    }
 }
 
 .layoutActive {
-  @extend .layout;
-  background-color: $color-accent;
-  color: $text-color-accent;
+    @extend .layout;
+    background-color: $color-accent;
+    color: $text-color-accent;
 
-  [data-theme='dark'] & {
-    background-color: $color-accent-dark;
-    color: $color-secondary-dark;
-  }
+    [data-theme="dark"] & {
+        background-color: $color-accent-dark;
+        color: $color-secondary-dark;
+    }
 }
 
 .layoutInactive {
-  @extend .layout;
-  background-color: $color-primary;
-  color: $text-color-primary;
-  border: $color-secondary 1px solid;
+    @extend .layout;
+    background-color: $color-primary;
+    color: $text-color-primary;
+    border: $color-secondary 1px solid;
 
-  [data-theme='dark'] & {
-    background-color: $color-primary-dark;
-    color: $color-secondary-dark;
-    border: $color-secondary-hal-dark 1px solid;
-  }
-
-  &:hover {
-    color: $color-accent;
-    cursor: pointer;
-    border-color: $color-secondary-hal;
-
-    [data-theme='dark'] & {
-      color: $color-accent-dark;
-      border-color: $color-accent-dark;
+    [data-theme="dark"] & {
+        background-color: $color-primary-dark;
+        color: $color-secondary-dark;
+        border: $color-secondary-hal-dark 1px solid;
     }
-  }
 
-  &:active {
-    transform: scale(0.95);
-  }
+    &:hover {
+        color: $color-accent;
+        cursor: pointer;
+        border-color: $color-secondary-hal;
+
+        [data-theme="dark"] & {
+            color: $color-accent-dark;
+            border-color: $color-accent-dark;
+        }
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
 }
 
 .image {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  transition: 300ms;
-  //noinspection ALL
-  @media screen and (max-width: $small) {
-    width: 7vw;
-    height: 7vw;
-  }
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: 300ms;
+    //noinspection ALL
+    @media screen and (max-width: $small) {
+        width: 7vw;
+        height: 7vw;
+    }
 }
 
 .imageActive {
-  @extend .image;
-  filter: brightness(0) invert(1);
+    @extend .image;
+    filter: brightness(0) invert(1);
 
-  [data-theme='dark'] & {
-    filter: none;
-  }
-
+    [data-theme="dark"] & {
+        filter: none;
+    }
 }
 
 .imageInactive {
-  @extend .image;
+    @extend .image;
 }
 
 .title {
-  @media screen and (max-width: $large) {
-    display: none;
-  }
+    @media screen and (max-width: $large) {
+        display: none;
+    }
 }

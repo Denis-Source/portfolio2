@@ -1,100 +1,99 @@
 .layout {
-  margin: 30px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  animation: fadeIn 300ms ease-out;
-  justify-content: space-between;
-  align-items: center;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    animation: fadeIn 300ms ease-out;
+    justify-content: space-between;
+    align-items: center;
 
-  @media screen and (max-width: $large) {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
+    @media screen and (max-width: $large) {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
 }
 
 .image {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  max-width: 100%;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    max-width: 100%;
 
-  @media screen and (max-width: $large) {
-    order: -1;
-  }
+    @media screen and (max-width: $large) {
+        order: -1;
+    }
 }
 
 .body {
-  align-self: center;
-  @media screen and (max-width: $large) {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  & h3 {
-    font-size: 26px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-
-  & i {
-    font-family: $font-text-italic;
-  }
-
-  & p {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 10px 0;
-    text-align: justify;
-
-    & a {
-      color: $color-accent;
-      text-decoration: solid underline transparent;
-      transition: text-decoration-color 300ms;
-
-      [data-theme='dark'] & {
-        color: $color-accent-dark;
-      }
-
-      &:hover {
-        text-decoration-color: $color-accent;
-
-        [data-theme='dark'] & {
-          text-decoration-color: $color-accent-dark;
-        }
-      }
+    align-self: center;
+    @media screen and (max-width: $large) {
+        max-width: 100%;
+        width: 100%;
     }
-  }
 
-  & ul {
-    padding-left: 20px;
-
-    & li {
-      margin: 8px 0;
-      text-align: justify;
-
-      & a {
-        color: $color-accent;
-        text-decoration: solid underline transparent;
-        transition: text-decoration-color 300ms;
-        [data-theme='dark'] & {
-          color: $color-accent-dark;
-        }
-
-        &:hover {
-          text-decoration-color: $color-accent;
-          [data-theme='dark'] & {
-            text-decoration-color: $color-accent-dark;
-          }
-        }
-      }
+    & h3 {
+        font-size: 26px;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
-  }
+
+    & i {
+        font-family: $font-text-italic;
+    }
+
+    & p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 10px 0;
+        text-align: justify;
+
+        & a {
+            color: $color-accent;
+            text-decoration: solid underline transparent;
+            transition: text-decoration-color 300ms;
+
+            [data-theme="dark"] & {
+                color: $color-accent-dark;
+            }
+
+            &:hover {
+                text-decoration-color: $color-accent;
+
+                [data-theme="dark"] & {
+                    text-decoration-color: $color-accent-dark;
+                }
+            }
+        }
+    }
+
+    & ul {
+        padding-left: 20px;
+
+        & li {
+            margin: 8px 0;
+            text-align: justify;
+
+            & a {
+                color: $color-accent;
+                text-decoration: solid underline transparent;
+                transition: text-decoration-color 300ms;
+                [data-theme="dark"] & {
+                    color: $color-accent-dark;
+                }
+
+                &:hover {
+                    text-decoration-color: $color-accent;
+                    [data-theme="dark"] & {
+                        text-decoration-color: $color-accent-dark;
+                    }
+                }
+            }
+        }
+    }
 }

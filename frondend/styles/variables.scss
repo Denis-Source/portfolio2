@@ -1,44 +1,44 @@
 @font-face {
-  font-family: Raleway-Regular;
-  font-display: swap;
-  src: url("../public/fonts/Raleway-Regular.woff2") format('woff2'),
-  url("../public/fonts/Raleway-Regular.ttf") format("truetype");
+    font-family: Raleway-Regular;
+    font-display: swap;
+    src: url("../public/fonts/Raleway-Regular.woff2") format("woff2"),
+        url("../public/fonts/Raleway-Regular.ttf") format("truetype");
 }
 
 $font-text-regular: "Raleway-Regular";
 
 @font-face {
-  font-family: Raleway-Bold;
-  font-display: swap;
-  src: url("../public/fonts/Raleway-Bold.woff2") format("woff2"),
-  url("../public/fonts/Raleway-Bold.ttf") format("truetype");
+    font-family: Raleway-Bold;
+    font-display: swap;
+    src: url("../public/fonts/Raleway-Bold.woff2") format("woff2"),
+        url("../public/fonts/Raleway-Bold.ttf") format("truetype");
 }
 
 $font-text-bold: "Raleway-Bold";
 
 @font-face {
-  font-family: Raleway-Italic;
-  font-display: swap;
-  src: url("../public/fonts/Raleway-Italic.woff2") format("woff2"),
-   url("../public/fonts/Raleway-Italic.ttf") format("truetype");
+    font-family: Raleway-Italic;
+    font-display: swap;
+    src: url("../public/fonts/Raleway-Italic.woff2") format("woff2"),
+        url("../public/fonts/Raleway-Italic.ttf") format("truetype");
 }
 
 $font-text-italic: "Raleway-Italic";
 
 @font-face {
-  font-family: Poppins-Medium;
-  font-display: swap;
-  src: url("../public/fonts/Poppins-Medium.woff2") format("woff2"),
-  url("../public/fonts/Poppins-Medium.ttf") format("truetype");
+    font-family: Poppins-Medium;
+    font-display: swap;
+    src: url("../public/fonts/Poppins-Medium.woff2") format("woff2"),
+        url("../public/fonts/Poppins-Medium.ttf") format("truetype");
 }
 
 $font-section-title: "Poppins-Medium";
 
 @font-face {
-  font-family: Poppins-Bold;
-  font-display: swap;
-  src: url("../public/fonts/Poppins-Bold.woff2") format("woff2"),
-  url("../public/fonts/Poppins-Bold.ttf") format("truetype")
+    font-family: Poppins-Bold;
+    font-display: swap;
+    src: url("../public/fonts/Poppins-Bold.woff2") format("woff2"),
+        url("../public/fonts/Poppins-Bold.ttf") format("truetype");
 }
 
 $font-section-subtitle: "Poppins-Bold";
@@ -71,17 +71,16 @@ $color-shadow: rgb(214 215 216 / 60%);
 $color-header: rgba(21, 34, 43, 0.85);
 $color-footer: #141d23;
 
-
-$text-color-primary-dark: #D6D5A8;
+$text-color-primary-dark: #d6d5a8;
 $text-color-secondary-dark: #816797;
 $text-color-accent-dark: #121921;
 
-$default-text-color-dark: #D6D5A8;
+$default-text-color-dark: #d6d5a8;
 
 $color-primary-dark: #121921;
-$color-accent-dark: #D6D5A8;
-$color-secondary-dark: #51557E;
-$color-secondary-hal-dark: #51557E77;
+$color-accent-dark: #d6d5a8;
+$color-secondary-dark: #51557e;
+$color-secondary-hal-dark: #51557e77;
 
 $color-correct-dark: #18d26e;
 $color-error-dark: #d14b30;
@@ -90,7 +89,7 @@ $color-correct-hal-dark: #5ba25155;
 $color-error-hal-dark: #d14b3055;
 
 $color-hero-overlay-dark: rgba(10, 16, 21, 0.57);
-$color-shadow-dark: #51557E22;
+$color-shadow-dark: #51557e22;
 
 $color-header-dark: rgba(214, 213, 168, 0.85);
 $color-footer-dark: #d6d5a8;

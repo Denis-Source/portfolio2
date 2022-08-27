@@ -1,65 +1,63 @@
 .header {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-  padding: 10px 0;
-  transition: background-color 300ms, padding 300ms;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 10px 0;
+    transition: background-color 300ms, padding 300ms;
 
-  color: $text-color-accent;
+    color: $text-color-accent;
 
-  [data-theme='dark'] & {
-    color: $color-header-dark;
-  }
+    [data-theme="dark"] & {
+        color: $color-header-dark;
+    }
 }
 
 .headerSunk {
-  @extend .header;
-  padding: 5px 0;
-  background-color: $color-header;
+    @extend .header;
+    padding: 5px 0;
+    background-color: $color-header;
 
-  [data-theme='dark'] & {
-    color: $color-primary-dark;
-    background-color: $color-header-dark;
-  }
+    [data-theme="dark"] & {
+        color: $color-primary-dark;
+        background-color: $color-header-dark;
+    }
 }
 
-
 .layout {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-  font-size: 32px;
-  font-family: $font-section-title;
+    font-size: 32px;
+    font-family: $font-section-title;
 
-  @media screen and (max-width: $tiny) {
-    font-size: 24px;
-  }
+    @media screen and (max-width: $tiny) {
+        font-size: 24px;
+    }
 }
 
 .navigation {
-  display: flex;
+    display: flex;
 }
 
 .name {
-  padding: 10px;
-  font-size: 14px;
-  font-family: $font-section-title;
-  text-transform: uppercase;
-  transition: color 300ms;
+    padding: 10px;
+    font-size: 14px;
+    font-family: $font-section-title;
+    text-transform: uppercase;
+    transition: color 300ms;
 
-  @media screen and (max-width: $medium) {
-    display: none;
-  }
-
-  &:hover {
-    color: $color-accent;
-
-    [data-theme='dark'] & {
-      color: $text-color-accent-dark;
+    @media screen and (max-width: $medium) {
+        display: none;
     }
-  }
 
+    &:hover {
+        color: $color-accent;
+
+        [data-theme="dark"] & {
+            color: $text-color-accent-dark;
+        }
+    }
 }

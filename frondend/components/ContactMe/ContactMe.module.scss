@@ -1,19 +1,19 @@
 .layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 
-  @media screen and (max-width: $large) {
-    grid-template-columns: 1fr;
-  }
+    @media screen and (max-width: $large) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 
-  @media screen and (max-width: $medium) {
-    grid-template-columns: 1fr;
-  }
+    @media screen and (max-width: $medium) {
+        grid-template-columns: 1fr;
+    }
 }
