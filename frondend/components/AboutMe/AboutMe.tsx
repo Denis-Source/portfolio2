@@ -12,7 +12,7 @@ const AboutMe = ({aboutMe}: { aboutMe: AboutMeModel }) => {
     return (
         <section>
             <div className={styles.spacer}></div>
-            <Fade direction={"left"}>
+            <Fade direction={"left"} triggerOnce>
                 <div>
                     <SectionTitle section={aboutMe}/>
                     <div className={styles.nav}>

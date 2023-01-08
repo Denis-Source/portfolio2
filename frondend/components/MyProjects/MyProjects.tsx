@@ -34,7 +34,7 @@ const MyProjects = ({
 
     return (
         <section>
-            <Fade direction={"left"}>
+            <Fade direction={"left"} triggerOnce>
                 <div>
                     <SectionTitle section={myProject}/>
                     <div className={styles.layout}>

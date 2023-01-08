@@ -9,7 +9,7 @@ import {Fade} from "react-awesome-reveal";
 const ContactMe = ({contactMe}: { contactMe: ContactMeModel }) => {
     return (
         <section>
-            <Fade direction={"left"}>
+            <Fade direction={"left"} triggerOnce>
                 <div>
                     <SectionTitle section={contactMe}/>
                     <div className={styles.layout}>
