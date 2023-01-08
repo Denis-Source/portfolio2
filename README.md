@@ -52,6 +52,7 @@ Form message is stored and then sent via a telegram bot using `requests` library
 - `next`
 - `next-themes`
 - `framer-motion`
+- `react-awesome-reveal`
 
 The frontend is written using [next.js](https://nextjs.org/) [react](https://ru.reactjs.org/) framework with a [server side rendering](https://nextjs.org/docs/basic-features/pages#server-side-rendering) aproach. The project itself is split in a multiple of function based components.
 
