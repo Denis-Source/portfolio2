@@ -21,9 +21,13 @@ class AboutTab(models.Model):
     image_black = models.ImageField(upload_to="about-images")
     image_white = models.ImageField(upload_to="about-images")
     body = HTMLField()
+    priority = models.IntegerField(default=100)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ["priority", "pk"]
 
 
 class About(SingletonModel):
